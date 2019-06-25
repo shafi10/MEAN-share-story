@@ -1,0 +1,30 @@
+<div ng-show="currentUser">
+  hello,{{currentUser}}
+
+  <br>
+  <a href ng-click="logout()">Logout</a>
+</div>
+<div>
+  <div ng-hide="currentUser">
+    <h2>You need to login first</h2>
+  </div>
+  <div ng-show="currentUser">
+ <div class="form-group" >
+   <textarea ng-model="comment.text" rows="4" cols="150">
+      Write your story.....
+</textarea>
+ </div>
+ <button type="button" ng-click="addcomment()" class="btn btn-lg btn-primary btn-block">Share Story</button>
+</div>
+ <div ng-repeat="x in com">
+   <div class="panel panel-default">
+       <div class="panel-heading">
+   	  <p class="panel-title">  <small>{{x.username}}</small><br>
+        <small>{{x.created}}</small></p>
+   	</div>
+      <span class="	glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+      {{x.text}}
+      <a href ng-click="removeComment(x)"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+      </div>
+</div>
+</div>

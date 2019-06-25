@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="/">
+	<title>login registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="header clearfix">
+      	<h3 class="text-muted">Share your every day Story</h3>
+			<nav>
+			  <ul class="nav nav-pills pull-right">
+					<li  role="presentation"><a href="/">Home</a></li>
+          <li  role="presentation"><a href="/login">login</a></li>
+          <li role="presentation"><a href="/registration">Registration</a></li>
+			  </ul>
+			</nav>
+		</div>
+		<div ng-view></div>
+
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js"></script>
+<script src="server.js"></script>
+<script src="controllers/controllers.js"></script>
+
+</body>
+</html>
